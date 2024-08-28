@@ -1,6 +1,6 @@
 ''' ITERATION 1
 
-Module: Stellar Analytics - Reusable Module for My Data Analytics Projects
+Module: Python With Bin - Reusable Module for My Data Analytics Projects
 
 This module provides a simple, reusable foundation for my analytics projects. 
 When we work hard to write useful code, we want it to be reusable.
@@ -28,7 +28,7 @@ I'll test it in an online interpreter to ensure this version runs correctly befo
 # Declare a global variable named byline.
 #####################################
 
-byline: str = 'Stellar Analytics: Delivering Professional Insights'
+byline: str = 'Python With Bin'
 
 #####################################
 # Define a main() function for this module.
