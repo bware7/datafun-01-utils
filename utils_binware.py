@@ -31,6 +31,16 @@ I'll test it in an online interpreter to ensure this version runs correctly befo
 byline: str = 'Python With Bin'
 
 #####################################
+# Function to return the byline.
+#####################################
+
+# Function named get_byline.
+# Returns the value of the byline variable.
+def get_byline() -> str:
+    '''Return the byline string.'''
+    return byline
+
+#####################################
 # Define a main() function for this module.
 #####################################
 
