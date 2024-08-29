@@ -23,8 +23,11 @@ tools_used: list = ["Git", "GitHub", "Python"]
 # list of floating-point numbers representing recent daily temperatures. 
 daily_temperatures: list = [72.5, 75.0, 69.8, 71.6, 74.2]
 
+# client satisfaction  ratings
+client_satisfaction_ratings: list = [4.9, 4.8, 5.0, 5.0, 4.7]
+
 #####################################
-# calculate basic statistics
+# calculate basic statistics for daily temperatures
 #####################################
 
 # calculate the minimum temperature
@@ -38,6 +41,22 @@ mean_temp: float = statistics.mean(daily_temperatures)
 
 # calculate the standard deviation of temperatures
 stdev_temp: float = statistics.stdev(daily_temperatures)
+
+#####################################
+# calculate basic statistics for client satisfaction
+#####################################
+
+# calculate the minimum temperature
+min_rating: float = min(client_satisfaction_ratings)
+
+# calculate the maximum temperature
+max_rating: float = max(client_satisfaction_ratings)
+
+# calculate the mean (average) temperature
+mean_rating: float = statistics.mean(client_satisfaction_ratings)
+
+# calculate the standard deviation of temperatures
+stdev_rating: float = statistics.stdev(client_satisfaction_ratings)
 
 #####################################
 # declare a global variable named byline.
@@ -56,6 +75,12 @@ Minimum Temperature: {min_temp:.2f}
 Maximum Temperature: {max_temp:.2f}
 Mean Temperature: {mean_temp:.2f}
 Standard Deviation of Temperatures: {stdev_temp:.2f}
+
+Client Satisfaction Ratings: {client_satisfaction_ratings}
+Minimum Satisfaction Rating: {min_rating:.2f}
+Maximum Satisfaction Rating: {max_rating:.2f}
+Mean Satisfaction Rating: {mean_rating:.2f}
+Standard Deviation of Satisfaction Ratings: {stdev_rating:.2f}
 """
 
 #####################################
