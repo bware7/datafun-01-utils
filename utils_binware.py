@@ -24,6 +24,8 @@ Here's what a first draft of my utils_case.py might look like:
 I'll test it in an online interpreter to ensure this version runs correctly before continuing.
 '''
 
+import statistics
+
 #####################################
 # Declare a global variables
 #####################################
@@ -39,6 +41,15 @@ tools_used: list = ["Git", "GitHub", "Python"]
 
 # list of floating-point numbers representing recent daily temperatures. 
 daily_temperatures: list = [72.5, 75.0, 69.8, 71.6, 74.2]
+
+#####################################
+# calculate basic statistics
+#####################################
+
+min_temp: float = min(daily_temperatures)
+max_temp: float = max(daily_temperatures)
+mean_temp: float = statistics.mean(daily_temperatures)
+stdev_temp: float = statistics.stdev(daily_temperatures)
 
 #####################################
 # declare a global variable named byline.
