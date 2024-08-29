@@ -25,10 +25,35 @@ I'll test it in an online interpreter to ensure this version runs correctly befo
 '''
 
 #####################################
-# Declare a global variable named byline.
+# Declare a global variables
 #####################################
 
-byline: str = 'Python With Bin'
+# boolean indicating if project is privately held. 
+is_privately_held: bool = True
+
+# integer representing the size of the team involved in the project.
+team_size: int = 7
+
+# list of strings representing the tools being used in the project. 
+tools_used: list = ["Git", "GitHub", "Python"]
+
+# list of floating-point numbers representing recent daily temperatures. 
+daily_temperatures: list = [72.5, 75.0, 69.8, 71.6, 74.2]
+
+#####################################
+# declare a global variable named byline.
+# make it a multiline f-string to show our info. 
+#####################################
+
+byline: str = f""" 
+-------------------------------------------------
+ Python With Bin: A Coding Company
+-------------------------------------------------
+Is Privately Held: {is_privately_held}
+Number of Team Members: {team_size}
+Tools Used: {tools_used}
+Recent Daily Temperatures of the Office: {daily_temperatures}
+"""
 
 #####################################
 # Function to return the byline.
